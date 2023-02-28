@@ -1,14 +1,13 @@
 @import "../components/home-page-tile.scss";
 
-@media screen and (min-width: 276px) and (max-width: 376px) {
+@media screen and (min-width: 276px) and (max-width: 499px) {
   $margin-horizontal: calc((100vw - 343px) / 2);
 
   #home-page {
     display: grid;
     grid-template-columns: 1fr;
     grid-gap: 24px;
-    margin: 48px max($margin-horizontal, 0px) 64px
-      max($margin-horizontal, 0px);
+    margin: 48px max($margin-horizontal, 0px) 64px max($margin-horizontal, 0px);
   }
 
   .home-page-header-component {
