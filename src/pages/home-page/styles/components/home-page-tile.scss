@@ -1,0 +1,53 @@
+@import "../../../../global-styles/style.scss";
+
+@mixin home-page-tiles-component__tile(
+  $tile-width,
+  $tile-content-space-betweens-elements,
+  $tile-border-radius,
+  $container-icon-size,
+  $container-icon-border-radius,
+  $container-icon-margin,
+  $icon-size,
+  $title-font-name-style,
+  $title-padding: 0,
+  $description-padding,
+  $description-font-name-style
+) {
+  & &__tile {
+    display: grid;
+    justify-items: center;
+    width: $tile-width;
+    grid-template-rows: fit-content(100%) fit-content(100%);
+    height: 100%;
+    grid-gap: $tile-content-space-betweens-elements;
+    border-radius: $tile-border-radius;
+    background-color: var(--color-secondary-grey);
+  }
+
+  & &__icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: $container-icon-size;
+    height: $container-icon-size;
+    border-radius: $container-icon-border-radius;
+    margin: $container-icon-margin;
+
+    img {
+      width: $icon-size;
+      height: $icon-size;
+    }
+  }
+
+  & &__title {
+    @include add-header-style($title-font-name-style);
+    padding: $title-padding;
+  }
+
+  & &__description {
+    @include add-body-style($description-font-name-style);
+    opacity: 0.5;
+    padding: $description-padding;
+    text-align: center;
+  }
+}

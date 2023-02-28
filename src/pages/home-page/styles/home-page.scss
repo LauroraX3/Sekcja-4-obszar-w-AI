@@ -1,4 +1,22 @@
-/// Homepage Styles File
-/// Here we import all the Styles files we need for our Homepage.
+@import "../../../global-styles/styles/root.scss";
+@import "../../../global-styles/style.scss";
+@import "./devices/home-page-desktop.scss";
+@import "./devices/home-page-tablet.scss";
+@import "./devices/home-page-phone.scss";
 
 
+.home-page-tiles-component__pink-icon-bg {
+  background-color: rgba(($color-primary-pink), 0.1);
+}
+
+.home-page-tiles-component__purple-icon-bg {
+  background-color: rgba(($color-primary-purple), 0.1);
+}
+
+.home-page-tiles-component__turquise-icon-bg {
+  background-color: rgba(($color-primary-turquise), 0.1);
+}
+
+.home-page-tiles-component__yellow-icon-bg {
+  background-color: rgba(($color-primary-yellow), 0.1);
+}

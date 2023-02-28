@@ -1,15 +1,72 @@
 /// Main Styles File
 /// Here we import all the global Styles files we need for our project.
 
-@import "styles/normalize.scss";
 @import "styles/root.scss";
 @import "styles/fonts.scss";
 
-body {
-  font-family: 'Roboto', sans-serif;
-  color: var(--color-primary);
+* {
+  font-family: var(--font-family-dm-sans);
+  color: var(--color-secondary-white);
 }
 
-p {
-  color: var(--color-on-surface);
+a {
+  text-decoration: none;
+}
+
+body {
+  background-color: var(--color-primary-dark);
+  margin: 0px;
+}
+
+@mixin header1 {
+  font-size: 48px;
+  line-height: 56px;
+  letter-spacing: var(--letter-spacing-zero-point-two);
+  font-weight: var(--font-weight-medium);
+}
+
+@mixin header2 {
+  font-size: 32px;
+  line-height: 40px;
+  letter-spacing: var(--letter-spacing-zero-point-two);
+  font-weight: var(--font-weight-medium);
+}
+
+@mixin header3 {
+  font-size: 20px;
+  line-height: 24px;
+  letter-spacing: var(--letter-spacing-zero);
+  font-weight: var(--font-weight-medium);
+}
+
+@mixin body1 {
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: var(--letter-spacing-zero);
+  font-weight: var(--font-weight-regular);
+}
+
+@mixin body2 {
+  font-size: 14px;
+  line-height: 22px;
+  letter-spacing: var(--letter-spacing-zero);
+  font-weight: var(--font-weight-regular);
+}
+
+@mixin add-header-style($header-name) {
+  @if $header-name == "header1" {
+    @include header1;
+  } @else if $header-name == "header2" {
+    @include header2;
+  } @else if $header-name == "header3" {
+    @include header3;
+  }
+}
+
+@mixin add-body-style($body-name) {
+  @if $body-name == "body1" {
+    @include body1;
+  } @else if $body-name == "body2" {
+    @include body2;
+  }
 }

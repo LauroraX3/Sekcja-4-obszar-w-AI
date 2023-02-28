@@ -1,0 +1,46 @@
+@import "../components/home-page-tile.scss";
+
+@media screen and (min-width: 377px) and (max-width: 834px) {
+  $margin-horizontal: calc((100vw - 496px) / 2);
+
+  #home-page {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 24px;
+    margin: 247px max($margin-horizontal, 0px);
+  }
+
+  .home-page-header-component {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 16px;
+
+    &__title {
+      @include header1;
+    }
+
+    &__description {
+      @include body1;
+    }
+  }
+
+  .home-page-tiles-component {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 16px;
+
+    @include home-page-tiles-component__tile(
+      $tile-width: 240px,
+      $tile-content-space-betweens-elements: 16px,
+      $tile-border-radius: var(--border-radius-md),
+      $container-icon-size: 56px,
+      $container-icon-border-radius: var(--border-radius-xs),
+      $container-icon-margin: 20px 94px 0 90px,
+      $icon-size: 28px,
+      $title-font-name-style: "header3",
+      $title-padding: 0 6px 0 1px,
+      $description-padding: 0 17px 20px 14px,
+      $description-font-name-style: "body2"
+    );
+  }
+}
