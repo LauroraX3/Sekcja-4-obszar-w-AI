@@ -1,6 +1,6 @@
 @import "../components/home-page-tile.scss";
 
-@media screen and (min-width: 500px) and (max-width: 1049px) {
+@media screen and (min-width: 600px) and (max-width: 1049px) {
   $margin-horizontal: calc((100vw - 496px) / 2);
 
   #home-page {
