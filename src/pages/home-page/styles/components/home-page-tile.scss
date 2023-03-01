@@ -2,7 +2,6 @@
 @import "../../../../global-styles/styles/root.scss";
 
 @mixin home-page-tiles-component__tile(
-  //$tile-width,
   $tile-content-space-betweens-elements,
   $tile-border-radius,
   $container-icon-size,
@@ -17,9 +16,7 @@
   & &__tile {
     display: grid;
     justify-items: center;
-    //width: $tile-width;
     grid-template-rows: fit-content(100%) fit-content(100%);
-    //height: 100%;
     grid-gap: $tile-content-space-betweens-elements;
     border-radius: $tile-border-radius;
     background-color: var(--color-secondary-grey);
@@ -34,8 +31,6 @@
     width: $container-icon-size;
     height: $container-icon-size;
     border-radius: $container-icon-border-radius;
-    //padding: $container-icon-margin;
-    //margin-top: 24px;
 
     img {
       width: $icon-size;

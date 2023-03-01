@@ -2,12 +2,8 @@
 @import "../../../../global-styles/styles/root.scss";
 
 @media screen and (min-width: 680px) and (max-width: 1000px) {
-  //$margin-horizontal: calc((100vw - 496px) / 2);
 
   #home-page {
-    //display: grid;
-    //grid-template-columns: 1fr;
-    grid-gap: 24px;
     margin: 247px 169px 247px;
   }
 
@@ -29,11 +25,9 @@
   .home-page-tiles-component {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    //grid-template-rows: 1fr 1fr;
     grid-gap: 16px;
 
     @include home-page-tiles-component__tile(
-      //$tile-width: 240px,
       $tile-content-space-betweens-elements: 16px,
       $tile-border-radius: var(--border-radius-md),
       $container-icon-size: 56px,

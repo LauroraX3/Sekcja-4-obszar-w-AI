@@ -1,7 +1,6 @@
 @import "../components/home-page-tile.scss";
 
 @media screen and (min-width: 276px) and (max-width: 679px) {
-  //$margin-horizontal: calc((100vw - 343px) / 2);
 
   #home-page {
     display: grid;
@@ -30,7 +29,6 @@
     grid-gap: 16px;
 
     @include home-page-tiles-component__tile(
-      //$tile-width: 343px,
       $tile-content-space-betweens-elements: 16px,
       $tile-border-radius: var(--border-radius-md),
       $container-icon-size: 56px,
