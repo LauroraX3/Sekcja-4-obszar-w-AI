@@ -1,8 +1,59 @@
-/// Root Styles file
-/// Here we define all the root variables we need for our project.
-/// For examples see Material Design color system: https://m2.material.io/design/color/the-color-system.html
+// / Root Styles file
+// / Here we define all the root variables we need for our project.
+// / For examples see Material Design color system: https://m2.material.io/design/color/the-color-system.html
 
 :root {
-    --color-primary: #5721f2;
-    --color-on-surface: #000;
+  //Font family
+  --font-family-dm-sans: "DM Sans";
+
+  //Letter spacing
+  --letter-spacing-zero-point-two: -0.002em;
+  --letter-spacing-zero: 0px;
+
+  //Font weights
+  --font-weight-medium: 500;
+  --font-weight-regular: 400;
+
+  //Colors
+  --color-primary-dark: #0f162d;
+  --color-primary-pink: #ca59ff;
+  --color-primary-purple: #6c7cff;
+  --color-primary-turquise: #2affff;
+  --color-primary-yellow: #fff629;
+  --color-secondary-white: #ffffff;
+  --color-secondary-grey: #272d42;
+  --color-secondary-black: #000000;
+
+  //Border radiuses
+  --border-radius-xs: 14px;
+  --border-radius-sm: 16px;
+  --border-radius-md: 20px;
+  --border-radius-lg: 24px;
 }
+
+//Font family
+$font-family-dm-sans: "DM Sans";
+
+//Letter spacing
+$letter-spacing-zero-point-two: -0.002em;
+$letter-spacing-zero: 0px;
+
+//Font weights
+$font-weight-medium: 500;
+$font-weight-regular: 400;
+
+//Colors
+$color-primary-dark: #0f162d;
+$color-primary-pink: #ca59ff;
+$color-primary-purple: #6c7cff;
+$color-primary-turquise: #2affff;
+$color-primary-yellow: #fff629;
+$color-secondary-white: #ffffff;
+$color-secondary-grey: #272d42;
+$color-secondary-black: #000000;
+
+//Border radiuses
+$border-radius-xs: 14px;
+$border-radius-sm: 16px;
+$border-radius-md: 20px;
+$border-radius-lg: 24px;
